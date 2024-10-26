@@ -1,0 +1,53 @@
+package HcComponentsZeos;
+
+{$R *.res}
+{$R '..\src\HcComponent.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  bindengine,
+  xmlrtl,
+  soaprtl,
+  dbrtl,
+  inet,
+  bindcomp,
+  RESTComponents,
+  HcComponentsBase,
+  ZComponent,
+  ZDbc,
+  ZPlain,
+  ZCore,
+  ZParseSql;
+
+contains
+  uHcEngineZeos in '..\src\uHcEngineZeos.pas',
+  uHcDriverZeos in '..\src\uHcDriverZeos.pas',
+  uHcZMemTable in '..\src\uHcZMemTable.pas',
+  uHcZeosReg in '..\src\uHcZeosReg.pas';
+
+end.

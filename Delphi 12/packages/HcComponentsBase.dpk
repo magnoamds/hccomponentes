@@ -1,0 +1,78 @@
+package HcComponentsBase;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  soaprtl,
+  dbrtl,
+  bindengine,
+  bindcomp,
+  RESTComponents,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon;
+
+contains
+  uHcCommons in '..\src\uHcCommons.pas',
+  uHcConsts in '..\src\uHcConsts.pas',
+  uHcResult in '..\src\uHcResult.pas',
+  uHcTools in '..\src\uHcTools.pas',
+  uHcEngineContract in '..\src\uHcEngineContract.pas',
+  uHcEngineFireDAC in '..\src\uHcEngineFireDAC.pas',
+  uHcParamsDB in '..\src\uHcParamsDB.pas',
+  uHcRestContract in '..\src\uHcRestContract.pas',
+  uHcRestRequest in '..\src\uHcRestRequest.pas',
+  uHcRestRequestClient in '..\src\uHcRestRequestClient.pas',
+  uHcRestResponseClient in '..\src\uHcRestResponseClient.pas',
+  uHcPrimaryKey in '..\src\uHcPrimaryKey.pas',
+  uHcJSON in '..\src\uHcJSON.pas',
+  uHcJSONArray in '..\src\uHcJSONArray.pas',
+  uHcJSONContract in '..\src\uHcJSONContract.pas',
+  uHcJSONObject in '..\src\uHcJSONObject.pas',
+  uHcJSONValue in '..\src\uHcJSONValue.pas',
+  uHcTypes in '..\src\uHcTypes.pas',
+  uHcULID in '..\src\uHcULID.pas',
+  uHcBaseSQLStrings in '..\src\uHcBaseSQLStrings.pas',
+  uHcDriverBase in '..\src\uHcDriverBase.pas',
+  uHcServerContract in '..\src\uHcServerContract.pas',
+  uHcServerService in '..\src\uHcServerService.pas',
+  uHcCache in '..\src\uHcCache.pas',
+  uHcConnection in '..\src\uHcConnection.pas',
+  uHcDriverFireDAC in '..\src\uHcDriverFireDAC.pas',
+  uHcMemTable in '..\src\uHcMemTable.pas',
+  uHcServer in '..\src\uHcServer.pas',
+  uHcBaseDataSet in '..\src\uHcBaseDataSet.pas';
+
+end.
+
+
+
+
+
