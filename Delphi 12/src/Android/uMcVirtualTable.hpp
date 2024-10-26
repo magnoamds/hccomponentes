@@ -43,17 +43,17 @@ class PASCALIMPLEMENTATION TMcVirtualTable : public Virtualtable::TVirtualTable
 	
 private:
 	Umcbasedataset::TMcBaseDataSet* FMcBase;
-	Data::Db::TParams* __fastcall GetHcParams();
-	Umcbasedataset::TMcPrimaryKeys* __fastcall GetHcPrimaryKeys();
-	System::UnicodeString __fastcall GetHcAbout();
-	Umcbasedataset::TMcCached* __fastcall GetHcCache();
-	Umcbasedataset::TMcConnection* __fastcall GetHcConnection();
-	System::Classes::TStrings* __fastcall GetHcSQL();
-	void __fastcall SetHcParams(Data::Db::TParams* const Value);
-	void __fastcall SetHcPrimaryKeys(Umcbasedataset::TMcPrimaryKeys* const Value);
-	void __fastcall SetHcCache(Umcbasedataset::TMcCached* const Value);
-	void __fastcall SetHcConnection(Umcbasedataset::TMcConnection* const Value);
-	void __fastcall SetHcSQL(System::Classes::TStrings* const Value);
+	Data::Db::TParams* __fastcall GetMcParams();
+	Umcbasedataset::TMcPrimaryKeys* __fastcall GetMcPrimaryKeys();
+	System::UnicodeString __fastcall GetMcAbout();
+	Umcbasedataset::TMcCached* __fastcall GetMcCache();
+	Umcbasedataset::TMcConnection* __fastcall GetMcConnection();
+	System::Classes::TStrings* __fastcall GetMcSQL();
+	void __fastcall SetMcParams(Data::Db::TParams* const Value);
+	void __fastcall SetMcPrimaryKeys(Umcbasedataset::TMcPrimaryKeys* const Value);
+	void __fastcall SetMcCache(Umcbasedataset::TMcCached* const Value);
+	void __fastcall SetMcConnection(Umcbasedataset::TMcConnection* const Value);
+	void __fastcall SetMcSQL(System::Classes::TStrings* const Value);
 	
 protected:
 	virtual void __fastcall Notification(System::Classes::TComponent* AComponent, System::Classes::TOperation AOperation);
@@ -78,12 +78,12 @@ public:
 	Data::Db::TParam* __fastcall ParamByName(const System::UnicodeString Value);
 	
 __published:
-	__property System::UnicodeString HcAbout = {read=GetHcAbout};
-	__property Umcbasedataset::TMcCached* Cache = {read=GetHcCache, write=SetHcCache};
-	__property Umcbasedataset::TMcConnection* Connection = {read=GetHcConnection, write=SetHcConnection};
-	__property Umcbasedataset::TMcPrimaryKeys* PrimaryKeys = {read=GetHcPrimaryKeys, write=SetHcPrimaryKeys};
-	__property Data::Db::TParams* Params = {read=GetHcParams, write=SetHcParams};
-	__property System::Classes::TStrings* SQL = {read=GetHcSQL, write=SetHcSQL};
+	__property System::UnicodeString About = {read=GetMcAbout};
+	__property Umcbasedataset::TMcCached* Cache = {read=GetMcCache, write=SetMcCache};
+	__property Umcbasedataset::TMcConnection* Connection = {read=GetMcConnection, write=SetMcConnection};
+	__property Umcbasedataset::TMcPrimaryKeys* PrimaryKeys = {read=GetMcPrimaryKeys, write=SetMcPrimaryKeys};
+	__property Data::Db::TParams* Params = {read=GetMcParams, write=SetMcParams};
+	__property System::Classes::TStrings* SQL = {read=GetMcSQL, write=SetMcSQL};
 };
 
 #pragma pack(pop)

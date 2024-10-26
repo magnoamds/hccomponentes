@@ -83,7 +83,7 @@ __published:
 	__property LinkedFields = {default=0};
 	__property MasterFields = {default=0};
 	__property MasterSource;
-	__property System::UnicodeString HcAbout = {read=GetMcAbout};
+	__property System::UnicodeString About = {read=GetMcAbout};
 	__property Umcbasedataset::TMcCached* Cache = {read=GetMcCache, write=SetMcCache};
 	__property Umcbasedataset::TMcConnection* Connection = {read=GetMcConnection, write=SetMcConnection};
 	__property Umcbasedataset::TMcPrimaryKeys* PrimaryKeys = {read=GetMcPrimaryKeys, write=SetMcPrimaryKeys};

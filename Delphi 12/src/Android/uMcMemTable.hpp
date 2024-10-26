@@ -86,7 +86,7 @@ public:
 	HIDESBASE Data::Db::TParam* __fastcall ParamByName(const System::UnicodeString Value);
 	
 __published:
-	__property System::UnicodeString McAbout = {read=GetMcAbout};
+	__property System::UnicodeString About = {read=GetMcAbout};
 	__property Umccache::TMcCached* Cache = {read=GetMcCache, write=SetMcCache};
 	__property Umcbasedataset::TMcConnection* Connection = {read=GetMcConnection, write=SetMcConnection};
 	__property Umcbasedataset::TMcPrimaryKeys* PrimaryKeys = {read=GetMcPrimaryKeys, write=SetMcPrimaryKeys};
